@@ -19,10 +19,12 @@ function pressTheButton() {
   console.log("nr din x" + number);
   console.log("nr radon" + www);
     if (Verificare() == 0 && tries>=7) {
-      document.getElementById("demo").innerHTML = "Hai ca ai scapat patroane";
+      document.getElementById("demo").innerHTML = "Youre free to go";
+      document.body.style.backgroundColor = "#00ff00";
     } else if (Verificare() == 1 && tries<=7) {
       document.getElementById("demo").innerHTML = "GAME OVER HANG OVER";
       document.body.style.backgroundColor = "#ff0000";
+      
       
     }
 
@@ -32,6 +34,8 @@ function pressTheButton() {
 }
 
 function ResetAll() {
+
+ 
   document.body.style.backgroundColor = "#00ff00";
   tries = 0;
   document.getElementById("demo").innerHTML = " ";
